@@ -1,0 +1,36 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+h1::after{
+    content:"";
+    animation:carousel 2s linear infinite normal;
+    background-color: blue;
+    color:white;
+    padding:8px;
+    border:4px;
+    margin-left:4px;
+}
+@keyframes carousel{
+    0%{
+            content:"Sleeping";
+    }
+    25%{
+            content:"Eating";
+    }
+    50%{
+            content:"Coding";
+    }
+    75%{
+            content:"Listening Raps";
+    }
+    100%{
+            content:"Sleeping";
+    }
+}
